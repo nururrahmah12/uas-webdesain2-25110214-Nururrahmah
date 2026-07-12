@@ -6,16 +6,14 @@
 	<title>Caffe KoiKoi & Eatery</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-<script src="bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
-
 <nav class="navbar navbar-expand-lg navbar-dark">
 	<div class="container">
-		<a class="navbar-brand" href="#hero">Caffe KoiKoi & Eatery</a>
+		<a class="navbar-brand"><img src="img/koi6.jpeg" width="45" class="logo">Caffe KoiKoi & Eatery</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavbar"> <span class="navbar-toggler-icon"></span> 
 		</button>
 
@@ -23,16 +21,16 @@
   	  		<ul class="navbar-nav ml-auto">
 
 		        <li class="nav-item">
-		            <a class="nav-link" href="#hero">Home</a>
+		            <a href="#" class="nav-link nav-link-page active" data-page="home">Home</a>
 		        </li>
 		        <li class="nav-item">
-		            <a class="nav-link" href="#menu">Menu</a>
+		            <a href="#" class="nav-link nav-link-page" data-page="menu">Menu</a>
 		        </li>
 		        <li class="nav-item">
-		            <a class="nav-link" href="#about">Tentang</a>
+                    <a href="#" class="nav-link nav-link-page" data-page="tentang">About</a>
 		        </li>
 		        <li class="nav-item">
-		            <a class="nav-link" href="#kontak">Kontak</a>
+		            <a href="#" class="nav-link nav-link-page" data-page="kontak">Kontak</a>
 		        </li>
 
     		</ul>
@@ -42,102 +40,284 @@
 
 </nav>
 
-<section class="hero" id="hero">
+<div id="page-home" class="page-view active">
+    <section class="hero py-20 bg-light">
 
-   	 <div class="container">
-        <h1>Selamat Datang di Caffe KoiKoi & Eatery</h1>
-		<p>Nikmati berbagai pilihan kopi, makanan, dan minuman dengan cita rasa terbaik serta suasana yang nyaman.</p>
-        <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+        <div class="container">
+            <h1>Selamat Datang di Caffe KoiKoi & Eatery</h1>
+            <p>Nikmati berbagai pilihan kopi, makanan, dan minuman dengan cita rasa terbaik serta suasana yang nyaman.</p>
+            <a data-page="menu" class="btn btn-primary">Lihat Menu</a>
+        </div>
+
+    </section>
+
+    <section class="py-5 bg-light" id="promo">
+
+   <div class="container">
+    <h2 class="text-center mb-5 judul-fitur">Kenapa Memilih Kami?</h2>
+
+    <div class="row text-center">
+
+        <div class="col-md-4 mb-4">
+            <div class="fitur-card">
+                <div class="icon-box">☕</div>
+                <h5>Kopi Premium</h5>
+                <p>Menggunakan biji kopi pilihan terbaik.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="fitur-card">
+                <div class="icon-box">🍰</div>
+                <h5>Dessert Homemade</h5>
+                <p>Dibuat setiap hari agar tetap segar.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="fitur-card">
+                <div class="icon-box">📶</div>
+                <h5>Free WiFi</h5>
+                <p>Cocok untuk bekerja maupun nongkrong.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+                <p class="text-uppercase font-weight-bold small mb-1 text-danger">Informasi Terbaru</p>
+                <h2 class="font-weight-bold mb-4">Promo & Event KoiKoi</h2>
+    <div id="carouselBerita" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselBerita" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselBerita" data-slide-to="1"></li>
+                    <li data-target="#carouselBerita" data-slide-to="2"></li>
+                </ol>
+        <div class="carousel-inner">
+                <div class="carousel-item active"><img src="https://rome-tourism.org/wp-content/uploads/2023/11/gateau-tiramisu-italien-2048x2048.jpg" class="d-block w-100 carousel-img">
+                    <div class="carousel-caption">
+                        <span class="badge badge-warning">PROMO</span>
+                        <h2>Bestseller</h2>
+                        <p>Nikmati Promo Boba Latte setiap hari Senin–Jumat.</p>
+                        <a href="#" class="btn btn-light">Pesan Sekarang</a>
+                    </div>
+                </div>
+            <div class="carousel-item"><img src="img/maca2.png" class="d-block w-100 carousel-img">
+                <div class="carousel-caption">
+                    <span class="badge badge-success">MENU BARU</span>
+                    <h2>Matcha Latte Premium</h2>
+                    <p>Perpaduan matcha Jepang dengan susu segar yang creamy.</p>
+                    <a href="#" class="btn btn-light">Lihat Menu</a>
+                </div>
+            </div>
+            <div class="carousel-item"><img src="" class="d-block w-100 carousel-img">
+                <div class="carousel-caption">
+                    <span class="badge badge-danger">EVENT</span>
+                    <h2>Live Music Every Weekend</h2>
+                    <p>Nikmati suasana malam bersama musik akustik setiap Sabtu.</p>
+                    <a href="#" class="btn btn-light">Reservasi</a></div>
+            </div>
+        </div>
+                    <a class="carousel-control-prev" href="#carouselBerita" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselBerita" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </a>
+    </div>
+</div>
+</section>
+</div>
+
+<div id="page-menu" class="page-view">
+<section class="menu py-5">
+<div class="container">
+<div class="container">
+
+    <p class="section-subtitle">Our Special Menu</p>
+
+    <h2 class="section-title">
+        Menu Favorit KoiKoi
+    </h2>
+
+    <p class="section-desc">
+        Temukan berbagai pilihan makanan, minuman, dan dessert terbaik yang dibuat dengan bahan berkualitas serta cita rasa yang istimewa.
+    </p>
+
+    <!-- Card Menu -->
+
+    <div id="carouselMenu" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/koi4.jpeg" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Spaghetti Frutti De Mare</h5>
+                                <p class="text-danger font-weight-bold">Rp79.000</p>
+                                <p>Spaghetti lembut dengan seafood segar.</p>
+                                <a href="#" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://rome-tourism.org/wp-content/uploads/2023/11/gateau-tiramisu-italien-2048x2048.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Italian Tiramisu</h5>
+                                <p class="text-danger font-weight-bold">Rp28.000</p>
+                                <p>Dessert klasik Italia.</p>
+                                <a href="#" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/koi3.jpeg" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Beef Bolognese Pizza</h5>
+                                <p class="text-danger font-weight-bold">Rp75.000</p>
+                                <p>Pizza dengan daging sapi dan mozzarella.</p>
+                                <a href="#" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="carousel-item">
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/koi2.jpeg" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Matcha Latte</h5>
+                                <p class="text-danger font-weight-bold">Rp35.000</p>
+                                <p>Matcha premium dengan susu segar.</p>
+                                <a href="#" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/koi6.jpeg" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Cappuccino</h5>
+                                <p class="text-danger font-weight-bold">Rp30.000</p>
+                                <p>Kopi espresso dengan foam lembut.</p>
+                                <a href="#" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/koi5.jpeg" class="card-img-top">
+                            <div class="card-body">
+                                <h5>Butter Croissant</h5>
+                                <p class="text-danger font-weight-bold">Rp25.000</p>
+                                <p>Croissant renyah dengan butter premium.</p>
+                                <a href="#" class="btn btn-primary">Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselMenu" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselMenu" role="button" data-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+        </a>
+
     </div>
 
+</div>
 </section>
+</div>
 
-<section class="menu py-5" id="menu">
+<div id="page-tentang" class="page-view" style="padding-top: 56px;">
+    <section class="about py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="img/koi8.png" class="img-fluid rounded shadow about-img">
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Tentang Kami</h2>
+                    <p>KoiKoi & Eatery merupakan tempat favorit untuk menikmati kopi premium, dessert, dan makanan berkualitas dengan suasana hangat dan nyaman.</p>
+                    <p>Kami percaya bahwa secangkir kopi terbaik dapat menemani setiap momen, baik untuk bekerja, berkumpul bersama keluarga maupun teman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="page-kontak" class="page-view" style="padding-top: 56px;">
+<section id="kontak" class="py-5">
     <div class="container">
-
-	<h2 class="text-center mb-5">Menu Favorit</h2>
-
-    <div class="row">
-        <div class="col-md-4">
-   		 	 <div class="card">
-      			  <img src="https://tse3.mm.bing.net/th/id/OIP.m01wyrNvSSdZH2TL78Yn7gHaHa?pid=Api&P=0&h=180" class="card-img-top" alt="Kopi">
-
-      		  	<div class="card-body">
-            		<h5 class="card-title">Boba Latte</h5>
-					<p class="card-text">Kopi pilihan dengan aroma khas, dipadukan susu segar yang creamy</p>
-					<a href="pesan" class="btn btn-primary">Pesan</a>
-      		  	</div>
-   			</div>
-		</div>
-
-		<div class="col-md-4">
-   		 	 <div class="card">
-      			  <img src="https://rome-tourism.org/wp-content/uploads/2023/11/gateau-tiramisu-italien-2048x2048.jpg" class="card-img-top" alt="Kopi">
-
-      		  	<div class="card-body">
-            		<h5 class="card-title">Italian Tiramisu</h5>
-					<p class="card-text">Dessert klasik Italia dengan perpaduan mascarpone, kopi, dan taburan cokelat.</p>
-					<a href="#pesan" class="btn btn-primary">Pesan</a>
-      		  	</div>
-   			</div>
-		</div>
-
-		<div class="col-md-4">
-   		 	 <div class="card">
-      			  <img src="https://rome-tourism.org/wp-content/uploads/2023/11/gateau-tiramisu-italien-2048x2048.jpg" class="card-img-top" alt="Kopi">
-
-      		  	<div class="card-body">
-            		<h5 class="card-title">Italian Tiramisu</h5>
-					<p class="card-text">Dessert klasik Italia dengan perpaduan mascarpone, kopi, dan taburan cokelat.</p>
-					<a href="#pesan" class="btn btn-primary">Pesan</a>
-      		  	</div>
-   			</div>
-		</div>
-
-	</div>
-
-
-	</div>
-  </div>
-</section>
-
-<section class="about py-5" id="about">
-		<div class="container text-center">
-			<h2 class="mb-4">Tentang Kami</h2>
-			<p>Caffe KoiKoi & Eatery adalah tepat yang nyaman untuk menikmati berbagai pilihan kopi miuman,dan makanan kualitas terbaik. Kami menghadirkan suasana yang hangat sehingga cocok untk berkumpul, bekerja maupun bersantai bersama keluarga dan teman.</p>
-		</div>
-
-</section>
-
-<section class="kontak py-5" id="kontak">
-    <div class="container text-center">
-
-        <h2 class="mb-4">Kontak Kami</h2>
-
-        <p>📍 Pekanbaru, Riau</p>
-        <p>📞 0812-3456-7890</p>
-        <p>📧 koikoi.cafe@gmail.com</p>
-
+        <h2 class="judul-kontak text-center mb-5">Hubungi Kami</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-body p-4">
+                        <h4 class="text-center text-danger font-weight-bold mb-4">
+                            ☕ KoiKoi Coffee & Eatery
+                        </h4>
+                        <p>
+                            <strong>📍 Alamat</strong><br>Jl. Soekarno Hatta No. 99, Pekanbaru</br></p>
+                        <p>
+                            <strong>📞 Telepon</strong><br>0813-7162-8889</br></p>
+                        <p>
+                            <strong>📧 Email</strong><br>koikoi@gmail.com</br></p>
+                        <div class="mt-4">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Koikoi%20Coffee%20%26%20Eatery%20Jl.%20Soekarno%20Hatta%20No.%2099%20Pekanbaru&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                                width="100%"
+                                height="350"
+                                style="border:0; border-radius:15px;"
+                                allowfullscreen
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+</div>
 
-	
- <footer class="footer text-center py-4">
-    <div class="container">
+ <footer class="footer text-center py-3">
+ 	<div class="container">
+ 		<p class="mb-3">&copy; 2026 KoiKoi & Eatery | All Rights Reserved</p>
+ 	</div>
+ </footer>
 
-        <p>&copy; 2026 Caffe KoiKoi & Eatery</p>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-        <p>
-            📷 Instagram |
-            👍 Facebook |
-            🎵 TikTok
-        </p>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
-    </div>
-</footer>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-
+<script src="script.js"></script>
 
 </body>
 </html>
