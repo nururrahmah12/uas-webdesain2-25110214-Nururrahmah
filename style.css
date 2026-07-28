@@ -1,6 +1,9 @@
 body{
     background-color:#BA7E76;
     font-family:'Poppins', sans-serif;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 }
 
 html{
@@ -123,6 +126,8 @@ html{
 
 .page-view.active{
     display:block;
+    flex:1 0 auto;
+    width:100%;
     animation:pageShow .7s ease forwards;
 }
 
@@ -142,8 +147,19 @@ html{
 
 .carousel-item{
     padding:20px 50px;
+    overflow:hidden;
 }
 
+#carouselMenu,
+#carouselMenu .carousel-inner,
+#carouselBerita,
+#carouselBerita .carousel-inner{
+    overflow:hidden;
+}
+
+#carouselMenu .carousel-inner{
+    width:100%;
+}
 
 #carouselMenu .card{
     margin:10px;
@@ -463,6 +479,8 @@ box-shadow:0 10px 20px rgba(0,0,0,.2);
     background-color:#802531;
 
     color:white;
+    margin-top:auto;
+    width:100%;
 }
 
 
