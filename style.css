@@ -707,3 +707,180 @@ box-shadow:0 10px 20px rgba(0,0,0,.2);
 #orderModal .modal-footer #saveOrderBtn:hover{
     transform:translateY(-2px);
 }
+
+/* =========================================
+   RESPONSIVE FIXES
+   ========================================= */
+
+/* Tablet (<=991px) */
+@media (max-width: 991.98px){
+    .hero{
+        padding:130px 0;
+    }
+    .hero h1{
+        font-size:36px;
+    }
+    .hero p{
+        font-size:17px;
+    }
+    .section-title{
+        font-size:32px;
+    }
+    .judul-kontak{
+        font-size:32px;
+    }
+    .about-img{
+        height:300px;
+    }
+    #kontak .card{
+        min-height:auto !important;
+    }
+}
+
+/* Mobile (<=767px) */
+@media (max-width: 767.98px){
+
+    .navbar-brand{
+        font-size:18px;
+        display:flex;
+        align-items:center;
+    }
+    .logo{
+        width:38px;
+        height:38px;
+    }
+    .navbar-collapse{
+        background-color:#802531;
+        padding:10px 5px;
+        border-radius:0 0 12px 12px;
+    }
+    .nav-link{
+        margin-left:0;
+    }
+
+    .hero{
+        padding:90px 15px;
+    }
+    .hero h1{
+        font-size:28px;
+    }
+    .hero p{
+        font-size:15px;
+    }
+    .hero .btn{
+        font-size:16px !important;
+        padding:10px 20px !important;
+    }
+
+    .section-title{
+        font-size:26px;
+    }
+    .section-subtitle{
+        font-size:13px;
+        letter-spacing:1.5px;
+    }
+    .section-desc{
+        font-size:14px;
+        padding:0 10px;
+    }
+
+    .card img{
+        height:180px;
+    }
+
+    /* Carousel (Promo & Menu) */
+    .carousel-item{
+        padding:15px 40px;
+    }
+    .carousel-img{
+        height:200px;
+    }
+    .carousel-caption{
+        bottom:8%;
+        padding:0 8px;
+    }
+    .carousel-caption h2{
+        font-size:18px;
+    }
+    .carousel-caption p{
+        font-size:12px;
+        display:none;
+    }
+    .carousel-caption .btn{
+        padding:6px 14px !important;
+        font-size:13px;
+    }
+    #carouselMenu .carousel-control-prev-icon,
+    #carouselMenu .carousel-control-next-icon,
+    #carouselBerita .carousel-control-prev-icon,
+    #carouselBerita .carousel-control-next-icon{
+        width:32px;
+        height:32px;
+    }
+
+    /* About page */
+    .about-img{
+        height:220px;
+    }
+    .about-title{
+        font-size:26px;
+        text-align:center;
+    }
+    .about-label{
+        display:block;
+        text-align:center;
+        margin:auto;
+        width:fit-content;
+    }
+    .about-desc{
+        text-align:center;
+    }
+    .about-card{
+        padding:22px;
+    }
+    .judul-fitur{
+        font-size:26px;
+    }
+
+    /* Kontak page */
+    .judul-kontak{
+        font-size:24px;
+    }
+    #kontak iframe{
+        min-height:260px !important;
+    }
+    #kontak .card{
+        min-height:auto !important;
+    }
+
+    /* Info section (Jam Operasional / Lokasi) */
+    .py-5 h3{
+        font-size:20px;
+    }
+
+    /* Floating cart button */
+    #cartFab{
+        right:14px;
+        bottom:14px;
+        padding:10px 16px;
+        font-size:14px;
+    }
+
+    /* Order modal */
+    #orderModal .modal-dialog{
+        margin:10px;
+    }
+}
+
+/* Extra small (<=480px) */
+@media (max-width: 480px){
+    .hero h1{
+        font-size:24px;
+    }
+    .badge.rounded-pill{
+        font-size:12px;
+    }
+    .card-body h5{
+        font-size:16px;
+    }
+}
