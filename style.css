@@ -884,13 +884,11 @@ box-shadow:0 10px 20px rgba(0,0,0,.2);
         font-size:14px;
     }
 
-    /* Order modal */
     #orderModal .modal-dialog{
         margin:10px;
     }
 }
 
-/* Extra small (<=480px) */
 @media (max-width: 480px){
     .hero h1{
         font-size:24px;
